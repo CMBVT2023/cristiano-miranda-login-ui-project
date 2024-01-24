@@ -4,8 +4,7 @@
     Ensure div container stays centered within the browser at all times
     Double check flex properties and see if I need to further define additional ones
     Determine the final size of the login-ui
-    Set the border of the div container to have box-shadow and rounded edges
-    Finalize the design of the sign-in button 
+    Finalize the design of the sign-in button
 Additional Work:
  Set a pattern or picture to the be background of the body element
  Create a different looking login UI
@@ -46,8 +45,14 @@ body {
 
     /* Declare a minimum width and height to prevent overflow */
     min-width: 500px;
+    max-width: 520px;
     min-height: 300px;
-    border: 1px solid red;
+    
+    /* Sets the border-radius to round the div container's boarder edges */
+    border-radius: 15px;
+
+    /* Creates a drop shadow effect behind the div container*/
+    box-shadow: 0px 0px 20px 2px rgb(207, 205, 205);
 }
 
 .sign-in, .userInputs{
@@ -65,6 +70,9 @@ body {
 .sign-in {
     /* Increase the font size of the sign-in text */
     font-size: 50px;
+
+    /* Sets the font's weight to normal */
+    font-weight: normal;
 }
 
 .userInputs {
