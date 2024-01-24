@@ -1,0 +1,79 @@
+/* CSS style sheet for the Login-UI project */
+
+/* Things left to do:
+    Ensure div container stays centered within the browser at all times
+    Double check flex properties and see if I need to further define additional ones
+    Determine the final size of the login-ui
+    Set the border of the div container to have box-shadow and rounded edges
+    Finalize the design of the sign-in button 
+Additional Work:
+ Set a pattern or picture to the be background of the body element
+ Create a different looking login UI
+ Add some additional features to the login box
+ Set different colors for the login-ui elements*/
+
+html, body {
+    /* Set the height and width of the html page equal to the size of the browser */
+    width: 100%;
+    height: 100%;
+
+    /* Set overflow to hidden to remove the scroll bars from the user's view. */
+    overflow: hidden;
+}
+
+body {
+    /* Set the font for the login-ui */
+    font-family: monospace;
+
+    /* Sets the body's display to flex to control the positioning of the container div */
+    display: flex;
+
+    /* Sets the flex properties of the elements in the body to align in the center both horizontally and vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* Enables flex control within the container div to allow positioning of the various elements */
+    display: flex;
+
+    /* Sets alignment of all elements within the container div to center both horizontally and vertically */
+    align-items: center;
+    justify-content: center;
+
+    /* Sets the ordering of the elements within the container div to stack vertically, or in a column */
+    flex-direction: column;
+
+    /* Declare a minimum width and height to prevent overflow */
+    min-width: 500px;
+    min-height: 300px;
+    border: 1px solid red;
+}
+
+.sign-in, .userInputs{
+    /* Enables flex control for the sign-in text and the group comprised of the text boxes and button */
+    display: flex;
+
+    /* Sets the ordering of the elements to stack vertically, or in a column */
+    flex-direction: column;
+
+    /* Sets alignment of all elements to center both horizontally and vertically */
+    justify-content: center;
+    align-content: space-around;
+}
+
+.sign-in {
+    /* Increase the font size of the sign-in text */
+    font-size: 50px;
+}
+
+.userInputs {
+    /* Enables flex control over the individual text boxes and button */
+    display: flex;
+
+    /* Positions the text boxes and button with additional but even spacing between each element  */
+    justify-content: space-evenly;
+
+    /* Set the height value for the text boxes and button */
+    height: 150px;
+}
