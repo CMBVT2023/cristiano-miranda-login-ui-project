@@ -12,6 +12,12 @@ html, body {
     width: 100%;
     height: 100%;
 
+    /* Sets background to an image via a url */
+
+    /* Image credit: Yuriy Kovalev*/
+    background-image: url(https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: aliceblue;
+
     /* Set overflow to hidden to remove the scroll bars from the user's view. */
     overflow: hidden;
 }
@@ -47,7 +53,9 @@ body {
     border-radius: 15px;
 
     /* Creates a drop shadow effect behind the div container*/
-    box-shadow: 0px 0px 20px 2px rgb(207, 205, 205);
+    box-shadow: 0px 0px 20px 5px rgb(88, 210, 214);
+
+    background-color: rgba(88, 210, 214, 0.397);
 }
 
 .sign-in {
