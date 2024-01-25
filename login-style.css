@@ -1,10 +1,6 @@
 /* CSS style sheet for the Login-UI project */
 
 /* Things left to do:
-    Ensure div container stays centered within the browser at all times
-    Double check flex properties and see if I need to further define additional ones
-    Determine the final size of the login-ui
-    Finalize the design of the sign-in button
 Additional Work:
  Set a pattern or picture to the be background of the body element
  Create a different looking login UI
@@ -38,7 +34,6 @@ body {
 
     /* Sets alignment of all elements within the container div to center both horizontally and vertically */
     align-items: center;
-    justify-content: center;
 
     /* Sets the ordering of the elements within the container div to stack vertically, or in a column */
     flex-direction: column;
@@ -55,21 +50,9 @@ body {
     box-shadow: 0px 0px 20px 2px rgb(207, 205, 205);
 }
 
-.sign-in, .userInputs{
-    /* Enables flex control for the sign-in text and the group comprised of the text boxes and button */
-    display: flex;
-
-    /* Sets the ordering of the elements to stack vertically, or in a column */
-    flex-direction: column;
-
-    /* Sets alignment of all elements to center both horizontally and vertically */
-    justify-content: center;
-    align-content: space-around;
-}
-
 .sign-in {
     /* Increase the font size of the sign-in text */
-    font-size: 50px;
+    font-size: 40px;
 
     /* Sets the font's weight to normal */
     font-weight: normal;
@@ -79,9 +62,44 @@ body {
     /* Enables flex control over the individual text boxes and button */
     display: flex;
 
-    /* Positions the text boxes and button with additional but even spacing between each element  */
-    justify-content: space-evenly;
+    /* Positions the text boxes and button with additional but even spacing between each element and centers them on screen */
+    justify-content: space-around;
+    align-items: center;
+
+    /* Sets the ordering of the elements to stack vertically, or in a column */
+    flex-direction: column;
 
     /* Set the height value for the text boxes and button */
-    height: 150px;
+    height: 200px;
+}
+
+.inputBox {
+    /* Sets the width of the text boxes */
+    width: 175px;
+
+    /* Sets all sides of the text boxes' borders to transparent and then sets the bottom to black */
+    border-color: transparent;
+    border-bottom-color: black;
+}
+
+.inputBtn {
+    /* Sets the height and width for the sign-in button */
+    height: 30px;
+    width: 200px;
+
+    /* Sets the background color of the sign-in button to blue and its text color to white */
+    background-color: #008CBA;
+    color: #ffffff;
+
+    /* Rounds the sign-in buttons boarder and sets its boarder color to be transparent*/
+    border-radius: 10px;
+    border-color: transparent;
+
+    /* Sets the font size of the sign-in button */
+    font-size: 12px;
+}
+
+.inputBtn:hover {
+    /* Change the background color of the sign-in button to become a darker blue */
+    background-color: rgba(0, 97, 129, 0.863)
 }
