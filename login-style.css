@@ -1,12 +1,5 @@
 /* CSS style sheet for the Login-UI project */
 
-/* Things left to do:
-Additional Work:
- Set a pattern or picture to the be background of the body element
- Create a different looking login UI
- Add some additional features to the login box
- Set different colors for the login-ui elements*/
-
 html, body {
     /* Set the height and width of the html page equal to the size of the browser */
     width: 100%;
@@ -129,7 +122,7 @@ body {
     background-color: rgba(57, 181, 185, 0.795);
 }
 
-/* Media query checks to see if the browser window is only 700px wide or 500px tall */
+/* Checks to see if the browser window is only 700px wide or 500px tall */
 @media (max-width: 700px) or (max-height: 500px) {
     /* If the media query is true, removes the background image */
     body,html {
