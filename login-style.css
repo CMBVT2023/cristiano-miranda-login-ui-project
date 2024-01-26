@@ -46,7 +46,6 @@ body {
 
     /* Declare a minimum width and height to prevent overflow */
     min-width: 500px;
-    max-width: 520px;
     min-height: 300px;
     
     /* Sets the border-radius to round the div container's boarder edges */
@@ -55,6 +54,7 @@ body {
     /* Creates a drop shadow effect behind the div container*/
     box-shadow: 0px 0px 20px 5px rgb(88, 210, 214);
 
+    /* Sets the div container's background color */
     background-color: rgba(88, 210, 214, 0.397);
 }
 
@@ -64,6 +64,12 @@ body {
 
     /* Sets the font's weight to normal */
     font-weight: normal;
+
+    /* Changes the font color of the sign-in text */
+    color: #ffffffd3;
+
+    /* Adds a drop shadow to the sign-in text */
+    text-shadow: rgb(18, 116, 119) 0px 0px 15px;
 }
 
 .userInputs {
@@ -88,6 +94,12 @@ body {
     /* Sets all sides of the text boxes' borders to transparent and then sets the bottom to black */
     border-color: transparent;
     border-bottom-color: black;
+
+    /* Rounds the edges of the text boxes */
+    border-radius: 5px;
+
+    /* Sets the background color of the text boxes*/
+    background-color: rgba(83, 200, 204, 0.774);
 }
 
 .inputBtn {
@@ -108,6 +120,19 @@ body {
 }
 
 .inputBtn:hover {
-    /* Change the background color of the sign-in button to become a darker blue */
-    background-color: rgba(0, 97, 129, 0.863)
+    /* Change the background color of the sign-in button to become a darker color */
+    background-color: rgb(0, 97, 129);
+}
+
+.inputBox:focus {
+    /* Changes the background color of the text box when it has the user's focus */
+    background-color: rgba(57, 181, 185, 0.795);
+}
+
+/* Media query checks to see if the browser window is only 700px wide or 500px tall */
+@media (max-width: 700px) or (max-height: 500px) {
+    /* If the media query is true, removes the background image */
+    body,html {
+        background-image: none;
+    }
 }
