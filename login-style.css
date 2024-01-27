@@ -3,8 +3,8 @@
 
 html, body {
     /* Set the height and width of the html page equal to the size of the browser */
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     /* Set overflow to hidden to remove the scroll bars from the user's view. */
     overflow: hidden;
@@ -34,8 +34,11 @@ body {
 
     /* Declare a minimum width and height to prevent overflow */
     min-width: 500px;
-    max-width: 520px;
     min-height: 300px;
+
+    /* Declare a width and height of the container */
+    width: 15%;
+    height: 10%;
     
     /* Sets the border-radius to round the div container's boarder edges */
     border-radius: 15px;
