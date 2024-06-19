@@ -126,10 +126,21 @@ body {
     background-color: rgba(57, 181, 185, 0.795);
 }
 
+#image-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 25%;
+}
+
 /* Checks to see if the browser window is only 700px wide or 500px tall */
 @media (max-width: 700px) or (max-height: 500px) {
     /* If the media query is true, removes the background image */
     body,html {
         background-image: none;
+    }
+
+    #image-credit {
+        opacity: 0%;
     }
 }
